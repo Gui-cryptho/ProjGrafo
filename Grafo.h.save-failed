@@ -1,4 +1,5 @@
 //Arquivo Grafo.h
+
 typedef struct grafo Grafo;
 
 Grafo* cria_Grafo(int nro_vertices, int grau_max, int eh_ponderado);
@@ -7,10 +8,6 @@ int insereAresta(Grafo* gr, int orig, int dest, int eh_digrafo, float peso);
 int removeAresta(Grafo* gr, int orig, int dest, int eh_digrafo);
 void imprime_Grafo(Grafo *gr);
 
-//ex5
-float algoritmo_Prim(Grafo *gr, int orig, int *pai);
-void imprime_AGM_Prim(Grafo *gr, int orig);
-
 //ex6
-int encontraNo(Grafo* gr, int no);
+int encontraNó(Grafo* gr, int no);
 int encontraMenorAresta(Grafo* gr, int* orig, int* dest, float* menor_peso);
